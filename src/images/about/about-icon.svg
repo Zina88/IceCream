@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="arrow" viewBox="0 0 32 32">
+      <path d="M15.524 0H6.24l10.239 16L6.24 32h9.284L25.76 16 15.524 0z"/>
+    </symbol>
+  </defs>
+</svg>
