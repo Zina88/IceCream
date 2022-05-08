@@ -12,5 +12,11 @@
     <symbol id="icon-right-arrow" viewBox="0 0 32 32">
       <path d="m19.902 29.045 11.429-11.429a2.286 2.286 0 0 0 0-3.233L19.902 2.954a2.286 2.286 0 1 0-3.233 3.233l7.527 7.527H2.286a2.286 2.286 0 0 0 0 4.572h21.91l-7.527 7.527c-.446.446-.669 1.031-.669 1.616s.223 1.17.669 1.616c.893.893 2.34.893 3.233 0z"/>
     </symbol>
+    <symbol id="icon-bracket-red" viewBox="0 0 26 32">
+      <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/>
+    </symbol>
+    <symbol id="icon-bracket-white" viewBox="0 0 26 32">
+      <path fill="none" stroke="#ffffff" style="stroke:var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/>
+    </symbol>
   </defs>
 </svg>
