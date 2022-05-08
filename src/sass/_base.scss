@@ -4,7 +4,7 @@ body{
     font-size: 16px;
     line-height: 1.31;
     letter-spacing: 0.04em;
-    color: var(#000000);
+    color: var(--primary-txt-cl);
 }
 .container {
     width: 100%;
@@ -26,6 +26,15 @@ body{
     }
 
 }
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media screen and (min-width:1280px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+}
+   
 
 .title {
     font-family: var(--secondary-font);
@@ -78,6 +87,7 @@ a {
 }
 ul {
     list-style: none;
+    padding: 0;
 }
 h1,
 h2,
@@ -94,6 +104,11 @@ ol {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
+}
+picture {
+    display: block;
+    max-width: 100%;  
     height: auto;
 }
 .no-scroll {
