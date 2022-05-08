@@ -1,3 +1,20 @@
+@mixin mq($screen) {
+  $mobile: 480px;
+  $tablet: 768px;
+  $desktop: 1280px;
+
+  @if $screen == retina {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
 }
@@ -29,6 +46,10 @@ p {
     background-position-y: 75%;
     background-position-x: center;
     background-size: contain;
+
+    @include mq(retina) {
+      background-image: url(../images/about/about_bg_l@2x.png);
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -36,6 +57,10 @@ p {
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-position-x: center;
+
+    @include mq(retina) {
+      background-image: url(../images/about/about_bg_l@2x.png);
+    }
   }
 }
 
