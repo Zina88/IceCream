@@ -1,0 +1,94 @@
+.section__advantages {
+background-color: #FFF5F6;    
+padding-top: 40px;
+padding-bottom: 80px;
+@media screen and (min-width: 768px) {
+    padding: 80px 0;
+}
+@media screen and (min-width: 1280px) {
+    padding-top: 21px;
+    padding-bottom: 120px;
+}
+}
+.advantages {
+    padding-left: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.advantages__item {
+    @media screen and (max-width: 767px) {
+        margin-left: 5px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &:first-child {
+            margin-left: 17px;
+        }
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+       &:first-child {
+        margin-left: 1px;
+       } 
+        &:not(:last-child) {
+        margin-right: 142px;
+        }
+    }
+}
+.advantages__image {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages__element {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        margin-bottom: 13px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        margin-bottom: 16px;
+    }
+}
+.advantages__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+    }
+    @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    }
+}
