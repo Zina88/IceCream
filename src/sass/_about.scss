@@ -1,28 +1,30 @@
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  background-color: #fff5f6;
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+@mixin mq($screen) {
+  @if $screen == retina {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      @content;
+    }
   }
+}
+
+.section {
+  background-color: #fff5f6;
 }
 
 .section__bg {
   @media screen and (max-width: 767px) {
-    background-image: url(../images/about/about_bg_l.png);
+    background-image: url(../images/about/about_bg_s.png);
     background-repeat: no-repeat;
     background-position-y: 75%;
     background-position-x: center;
     background-size: contain;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about_bg_l@2x.png);
+    @include mq(retina) {
+      background-image: url(../images/about/about_bg_s@2x.png);
     }
   }
 
@@ -32,11 +34,9 @@
     background-position-y: 100%;
     background-position-x: center;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include mq(retina) {
       background-image: url(../images/about/about_bg_l@2x.png);
+      background-size: 1280px;
     }
   }
 }
@@ -47,13 +47,13 @@
     justify-content: center;
   }
 
-  @media screen and (min-width: 128px) {
+  @media screen and (min-width: 1280px) {
     justify-content: flex-start;
     align-items: center;
   }
 }
 
-.lable {
+.label {
   display: block;
 
   @media screen and (min-width: 768px) {
@@ -96,14 +96,21 @@
 
 .about__title {
   margin-bottom: 40px;
+  padding-left: 5px;
+  padding-right: 65px;
 
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
+  letter-spacing: normal;
 
   color: var(--primary-txt-cl);
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    padding-right: 0;
+    padding-left: 0;
+
     font-size: 14px;
     line-height: 1.79;
   }
@@ -119,16 +126,19 @@
 
 .about__text {
   margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 65px;
 
-  font-family: inherit;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
+  letter-spacing: normal;
 
   color: var(--secondary-txt-cl);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
 
     font-size: 14px;
     line-height: 1.79;
