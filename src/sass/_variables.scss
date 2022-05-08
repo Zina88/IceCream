@@ -1,0 +1,28 @@
+ :root{
+    /* Основные шрифты */
+    --main-font: DM Sans, sans-serif;
+    --secondary-font: Titan One, cursive;
+
+
+    /* Цвет текста */
+    --primary-txt-cl: #000000;
+    --secondary-txt-cl: #907E82;
+    --subtitle-txt-cl: #FFA5BA;
+    --accent-txt-cl: #D41443;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.no-scroll {
+    overflow-y: hidden;
+}
+  
