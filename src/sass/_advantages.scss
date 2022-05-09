@@ -61,7 +61,10 @@ background-color: #FFF5F6;
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        margin-left: 17px;
+        &:first-child {
+            margin-left: 17px;
+        }
+        
         &:not(:last-child) {
             margin-right: 22px;
         }
@@ -176,7 +179,6 @@ background-color: #FFF5F6;
     }
 }
 .advantages__text {
-    display: inline-block;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
