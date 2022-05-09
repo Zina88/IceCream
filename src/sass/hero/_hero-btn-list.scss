@@ -1,0 +1,30 @@
+.hero-btn__list {
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 20px;
+
+    &:first-child {
+        margin-right: 8px;
+        background-color: var(--accent-txt-cl);
+        color: #FFFFFF;
+    }
+
+    &:last-child {
+        background-color: #FFFFFF;
+        color: var(--accent-txt-cl);
+    }
+}
+.hero-btn__link {
+    display: block;
+    padding: 9px 14px;
+    color: inherit;
+}
