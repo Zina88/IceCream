@@ -1,0 +1,83 @@
+.header {
+  background-color: #ffb8ca;
+}
+
+.header__container {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.header__logo {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  color: var(--accent-txt-cl);
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.header__icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/icon-logo.png);
+  margin-right: 20px;
+}
+
+.main__btn-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 49px;
+  padding-left: 49px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--accent-txt-cl);
+
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
+}
+
+.main__btn-header:hover {
+  background-color: #ecebeb;
+}
+
+.header__buttons {
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.nav__list {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    padding-left: 175px;
+  }
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
