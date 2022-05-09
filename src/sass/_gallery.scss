@@ -7,20 +7,18 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-gap: 2px;
-    margin-left: 16px;
-    margin-right: 16px;
 
 
     @media screen and(min-width: 768px) {
         grid-gap: 4px;
-        margin-left: 73px;
-        margin-right: 73px;
+        margin-left: calc(73px - 15px);
+        margin-right: calc(73px - 15px);
     }
 
     @media screen and(min-width: 1280px){
         grid-gap: 8px;
-        margin-left: 134px;
-        margin-right: 134px;
+        margin-left: calc(134px - 15px);
+        margin-right: calc(134px - 15px);
     }
 }
 
