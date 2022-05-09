@@ -1,5 +1,5 @@
 
-.hero-wrapper__left-side {
+.hero-title-wrapper {
     
     @media screen and (max-width: 767px) {
         position: absolute;
@@ -12,5 +12,8 @@
     @media screen and (min-width: 768px) {   
         position: static;
         max-width: 170px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 277px;
     }
 }

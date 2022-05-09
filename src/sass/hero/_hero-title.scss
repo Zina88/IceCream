@@ -1,9 +1,7 @@
 .hero__title {
     display: inline-block;
     margin-bottom: 20px;
-    
-    
-
+ 
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -18,18 +16,24 @@
         font-size: 22px;
         line-height: 1.17;
     }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 24px;
+        font-size: 38px;
+        letter-spacing: 0.05em;
+    }
 }
 
 .hero__title--red {
-    display: inline-block;
- 
     font-size: 47px;
     letter-spacing: 0.01em;
-    
     color: var(--accent-txt-cl);
 
     @media screen and (min-width: 768px) {
         font-size: 37px;
         line-height: 1;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 61px;
+        line-height: 0.8;
     }
 }

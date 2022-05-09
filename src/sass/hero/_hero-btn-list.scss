@@ -4,7 +4,6 @@
 }
 
 .hero-btn__item {
-    font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -16,15 +15,27 @@
         margin-right: 8px;
         background-color: var(--accent-txt-cl);
         color: #FFFFFF;
+        @media screen and (min-width: 1280px) {
+            margin-right: 12px;
+        }
     }
 
     &:last-child {
         background-color: #FFFFFF;
         color: var(--accent-txt-cl);
     }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.28;
+    }
 }
 .hero-btn__link {
     display: block;
     padding: 9px 14px;
     color: inherit;
+
+    @media screen and (min-width: 1280px) {
+        padding: 11px 23px;
+    }
 }

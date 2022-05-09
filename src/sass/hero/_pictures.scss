@@ -4,8 +4,14 @@
     left: 36px;
 
     @media screen and (min-width: 768px) {
-        left: 300px;
+        top: 43px;
+        left: 248px;
+        // left: 35%;
     }
+    @media screen and (min-width: 1280px) {
+        top: 54px;
+        left: 517px;
+        }
 }
 
 .pic-2 {
@@ -14,7 +20,13 @@
     left: 117px;
 
     @media screen and (min-width: 768px) {
-        left: 300px;
+        top: 80px;
+        left: 322px;
+        // left: 40%;
+    }
+    @media screen and (min-width: 1280px) {
+        top: 108px;
+        left: 636px;
     }
 }
 
@@ -25,6 +37,6 @@
         display: block;
         position: absolute;
         right: 15px;
-        bottom: 0;
+        bottom: 1px;
     }
 }
