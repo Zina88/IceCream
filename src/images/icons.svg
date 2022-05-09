@@ -1,16 +1,17 @@
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="icon-Burger" viewBox="0 0 32 32">
-      <path stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"/>
+      <path stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32" />
     </symbol>
     <symbol id="icon-check-mark" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M6.742 3.2 23.567 16 6.742 28.8"/>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M6.742 3.2 23.567 16 6.742 28.8" />
     </symbol>
     <symbol id="icon-close-menu-btn" viewBox="0 0 32 32">
-      <path stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/>
+      <path stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518" />
     </symbol>
     <symbol id="icon-right-arrow" viewBox="0 0 32 32">
-      <path d="m19.902 29.045 11.429-11.429a2.286 2.286 0 0 0 0-3.233L19.902 2.954a2.286 2.286 0 1 0-3.233 3.233l7.527 7.527H2.286a2.286 2.286 0 0 0 0 4.572h21.91l-7.527 7.527c-.446.446-.669 1.031-.669 1.616s.223 1.17.669 1.616c.893.893 2.34.893 3.233 0z"/>
+      <path
+        d="m19.902 29.045 11.429-11.429a2.286 2.286 0 0 0 0-3.233L19.902 2.954a2.286 2.286 0 1 0-3.233 3.233l7.527 7.527H2.286a2.286 2.286 0 0 0 0 4.572h21.91l-7.527 7.527c-.446.446-.669 1.031-.669 1.616s.223 1.17.669 1.616c.893.893 2.34.893 3.233 0z" />
     </symbol>
   </defs>
 </svg>
