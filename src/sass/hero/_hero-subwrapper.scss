@@ -51,6 +51,10 @@
         width: 26px;
         height: 26px;
     }
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
 }
 
 .hero__icon {
