@@ -21,6 +21,7 @@ background-color: #FFF5F6;
     }
 }
 .advantages__item {
+    
     @media screen and (max-width: 767px) {
         margin-left: 5px;
     
@@ -38,13 +39,67 @@ background-color: #FFF5F6;
         margin: 71px;
     }
 }
-.advantages__element::before {
+.element__milk::before {
     content: "";
+    width: 33px;
+    height: 50px;
+    background-color: #FFF5F6;
     background-image: url(../images/advantages/adv-icon1.png);
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+    background-size: contain;
+    display: block;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
 }
+.element__apple::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #FFF5F6;
+    background-image: url(../images/advantages/adv-icon2.png);
+    background-size: contain;
+    display: block;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+}
+.element__ice-cream::before {
+    content: "";
+    width: 44px;
+    height: 50px;
+    background-color: #FFF5F6;
+    background-image: url(../images/advantages/adv-icon3.png);
+    background-size: contain;
+    display: block;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+}
+
 .advantages__image {
     @media screen and (max-width: 767px) {
         margin-bottom: 16px;
