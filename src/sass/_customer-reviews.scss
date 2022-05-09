@@ -1,0 +1,56 @@
+.customers {
+    background-color: white;
+    margin: 0 5px;
+
+}
+.customer__avatar {
+    height: 20px;
+    width: 20px;
+
+    border-radius: 50%;
+    background-color: grey;
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.customer__thumb {
+    background-color: #fafafa;
+    // margin-left: 40px;
+    // margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 17px 50px;
+
+    text-align: center;
+    text-decoration: underline grey;
+}
+
+.customer__text {
+   font-style: 16px;
+}
+
+.customer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer__item {
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.customer__name {
+    text-align: center;
+}
+.customer__button {
+    width: 20px;
+    height: 20px;
+    &:current {
+        border-color: aqua;
+    }
+    
+    
+}
