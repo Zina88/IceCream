@@ -130,6 +130,7 @@ background-color: #FFF5F6;
     margin-bottom: 16px;
     @media screen and (min-width: 768px) {
         font-size: 48px;
+        line-height: 1.15;
         margin-bottom: 13px;
     }
 
@@ -143,14 +144,14 @@ background-color: #FFF5F6;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.67;
     color: #000000;
     @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 1.74;
+    line-height: 1.71;
     }
     @media screen and (min-width: 1280px) {
     font-size: 16px;
-    line-height: 1.76;
+    line-height: 1.75;
     }
 }
