@@ -1,42 +1,49 @@
 .section__advantages {
-@media screen and (max-width: 767px) {
+
 background-color: #FFF5F6;
+
+@media screen and (max-width: 767px) {
+
     padding-top: 0;
+    }
 }
-}
+
 .advantages {
     padding-left: 0;
     @media screen and (min-width: 768px) {
         display: flex;
+        margin: -11px;
+        margin-left: 17px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin: -71px;
+        margin-left: 1px;
     }
 }
-
 .advantages__item {
     @media screen and (max-width: 767px) {
         margin-left: 5px;
-
+    
         &:not(:last-child) {
-            margin-bottom: 32px;
+        margin-bottom: 32px;
         }
-    }
-
+     }
     @media screen and (min-width: 768px) {
-        &:first-child {
-            margin-left: 17px;
-        }
-        &:not(:last-child) {
-            margin-right: 22px;
-        }
+        flex-basis: calc((100% - 6 * 11px) / 3);
+        margin: 11px;
+        
     }
-
     @media screen and (min-width: 1280px) {
-       &:first-child {
-        margin-left: 1px;
-       } 
-        &:not(:last-child) {
-        margin-right: 142px;
-        }
+        flex-basis: calc((100% - 6 * 71px) / 3);
+        margin: 71px;
     }
+}
+.advantages__element::before {
+    content: "";
+    background-image: url(../images/advantages/adv-icon1.png);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }
 .advantages__image {
     @media screen and (max-width: 767px) {
