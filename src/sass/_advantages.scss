@@ -44,9 +44,15 @@ background-color: #FFF5F6;
     width: 33px;
     height: 50px;
     background-color: #FFF5F6;
-    background-image: url(../images/advantages/adv-icon1.png);
     background-size: contain;
     display: block;
+    background-image: url(../images/advantages/adv-icon1.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/adv-icon1@2x.png);
+        }
     @media screen and (max-width: 767px) {
         margin-bottom: 16px;
     }
@@ -62,9 +68,15 @@ background-color: #FFF5F6;
     width: 50px;
     height: 50px;
     background-color: #FFF5F6;
-    background-image: url(../images/advantages/adv-icon2.png);
     background-size: contain;
     display: block;
+    background-image: url(../images/advantages/adv-icon2.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/adv-icon2@2x.png);
+        }
 
     @media screen and (max-width: 767px) {
         margin-bottom: 16px;
@@ -83,10 +95,15 @@ background-color: #FFF5F6;
     width: 44px;
     height: 50px;
     background-color: #FFF5F6;
-    background-image: url(../images/advantages/adv-icon3.png);
     background-size: contain;
     display: block;
-
+    background-image: url(../images/advantages/adv-icon3.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/adv-icon3@2x.png);
+        }
     @media screen and (max-width: 767px) {
         margin-bottom: 16px;
     }
@@ -95,18 +112,6 @@ background-color: #FFF5F6;
         margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 40px;
-    }
-}
-
-.advantages__image {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 16px;
-    }
-    @media screen and (min-width: 768px) {
-        margin-bottom: 36px;
-    }
     @media screen and (min-width: 1280px) {
         margin-bottom: 40px;
     }
