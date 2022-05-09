@@ -11,6 +11,11 @@
     letter-spacing: 0.03em;
     border-radius: 20px;
 
+    @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            line-height: 1.28;
+        }
+
     &:first-child {
         margin-right: 8px;
         background-color: var(--accent-txt-cl);
@@ -25,15 +30,10 @@
             border-radius: 20px;
         }
     }
-
     &:last-child {
         background-color: #FFFFFF;
         color: var(--accent-txt-cl);
 
-        @media screen and (min-width: 1280px) {
-            font-size: 14px;
-            line-height: 1.28;
-        }
         .hero-btn__link:hover,
         .hero-btn__link:focus & {
             background-color: #ECEBEB;
