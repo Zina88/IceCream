@@ -1,33 +1,20 @@
-.mobile-overlay {
-  background-color: #e17992;
+.mobile__menu {
   padding-top: 60px;
-  font-size: 20px;
-
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-.mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: 250px;
   height: 100vh;
   opacity: 0;
   transform: translateX(100%);
   background-color: #e17992;
   @media screen and (min-width: 768px) {
-    width: 254px;
     padding-top: 58px;
+    width: 254px;
   }
   @media screen and (min-width: 1280px) {
     display: none;
   }
-}
-.mobile-overlay.is-open {
-  display: block;
 }
 
 .mobile__menu.is-open {
@@ -37,6 +24,10 @@
 }
 
 .mobile__btn {
+  @media screen and (max-width: 479px) {
+    margin-left: 50px;
+  }
+
   margin-left: auto;
   display: inline-flex;
   align-items: center;
@@ -54,7 +45,6 @@
 
 .mobile__icon {
   fill: var(--accent-txt-cl);
-  background-color: #ffb8ca;
 }
 
 .icon-open {
@@ -75,6 +65,18 @@
   opacity: 1;
 }
 
+.mobile__btn.is-active .mobile__icon {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -12px;
+    right: 32px;
+  }
+}
+
+.mobile__btn.is-active ~ .main__btn-header {
+  display: none;
+}
+
 .main__btn-mobile {
   font-weight: 700;
   font-size: 16px;
@@ -82,12 +84,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
 
-  padding-right: 49px;
-  padding-left: 49px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-right: 48px;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: var(--accent-txt-cl);
 
   background-color: #ffffff;
@@ -95,13 +99,9 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-
   @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 52px;
+    padding-right: 35px;
   }
 }
 
@@ -124,4 +124,12 @@
 
 .mobile-nav__item--current {
   color: var(--accent-txt-cl);
+}
+
+.arrow_right__icon-mobile {
+  fill: var(--accent-txt-cl);
+  margin-left: 28px;
+  @media screen and (min-width: 768px) {
+    margin-left: 14px;
+  }
 }
