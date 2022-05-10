@@ -6,5 +6,10 @@
 // Стили для файла с примером HTML-фрагмента
 @import './variables';
 @import './base';
+@import './hero/index';
+@import './about';
+@import './gallery';
+@import './customer-reviews';
+@import './modal';
 @import './header';
 @import './mobile-menu';

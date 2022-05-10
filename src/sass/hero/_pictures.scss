@@ -1,0 +1,42 @@
+.pic-3 {
+    position: absolute;
+    top: 83px;
+    left: 36px;
+
+    @media screen and (min-width: 768px) {
+        top: 43px;
+        left: 248px;
+        // left: 35%;
+    }
+    @media screen and (min-width: 1280px) {
+        top: 54px;
+        left: 517px;
+    }
+}
+
+.pic-2 {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+
+    @media screen and (min-width: 768px) {
+        top: 80px;
+        left: 322px;
+        // left: 40%;
+    }
+    @media screen and (min-width: 1280px) {
+        top: 108px;
+        left: 636px;
+    }
+}
+
+.pic-4 {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 1px;
+    }
+}
