@@ -4,11 +4,8 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './variables';
-@import './base';
+@import "./variables";
+@import "./base";
 
 // подвал
-@import './footer/mobile-footer';
-@import './footer/mobile-footer-two';
-@import './footer/mobile-footer-netvork-panel';
-@import './footer/tablet-footer';
+@import "./footer/footer";
