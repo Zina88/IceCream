@@ -11,11 +11,11 @@
   }
 }
 
-.section {
+.section__bg {
   background-color: #fff5f6;
 }
 
-.section__bg {
+.section__bg-img {
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about_bg_s.png);
     background-repeat: no-repeat;
