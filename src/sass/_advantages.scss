@@ -1,0 +1,180 @@
+.section__advantages {
+background-color: #FFF5F6;
+@media screen and (max-width: 767px) {
+    padding-top: 0;
+    }
+}
+.container__advantages {
+    @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+}
+
+/*.advantages {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.advantages__item {
+    @media screen and (max-width: 767px) {
+        margin-left: 5px;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        &:first-child {
+            margin-left: 17px;
+        }
+        
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        &:not(:last-child) {
+            margin-right: 142px;
+        }
+    }
+
+}*/
+.advantages {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -22px;
+        margin-top: -22px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -142px;
+        margin-top: -142px;
+    }
+}
+.advantages__item {
+    @media screen and (max-width: 767px) {
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+       
+        margin-left: 22px;
+        margin-top: 22px;
+        flex-basis: calc((100% - 66px) / 3);
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 142px;
+        margin-top: 142px;
+        flex-basis: calc((100% - 726px) / 3);
+    }
+
+}
+
+.element__milk::before {
+    content: "";
+    width: 33px;
+    height: 50px;
+    background-color: #FFF5F6;
+    background-size: contain;
+    display: block;
+    background-image: url(../images/advantages/adv-icon1.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/adv-icon1@2x.png);
+    }
+}
+
+.element__apple::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #FFF5F6;
+    background-size: contain;
+    display: block;
+    background-image: url(../images/advantages/adv-icon2.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/adv-icon2@2x.png);
+    }
+}
+
+.element__ice-cream::before {
+    content: "";
+    width: 44px;
+    height: 50px;
+    background-color: #FFF5F6;
+    background-size: contain;
+    display: block;
+    background-image: url(../images/advantages/adv-icon3.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/adv-icon3@2x.png);
+    }
+}
+
+.element__milk::before,
+.element__apple::before, 
+.element__ice-cream::before {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages__element {
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+        margin-bottom: 13px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        margin-bottom: 16px;
+    }
+}
+.advantages__text {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: normal;
+    }
+    @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    }
+}
