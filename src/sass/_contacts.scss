@@ -1,6 +1,6 @@
 .section__contacts {
   height: 100%;
-  background-image: linear-gradient(#ffffff 15%, #fff5f6);
+  background-image: linear-gradient(#ffffff 15%, #fff5f6 15%, #fff5f6);
 }
 
 .contacts {
@@ -152,20 +152,32 @@
     padding: 0 17px;
     background-color: #d41342;
     color: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
       margin-right: 15px;
       padding: 0 35px;
     }
   }
+  &--red:hover,
+  &--red:focus {
+    background-color: #c7133e;
+  }
 
   &--white {
     padding: 0 32px;
     background-color: #ffffff;
     color: #d41342;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 768px) {
       padding: 0 40px;
     }
+  }
+  &--white:hover,
+  &--white:focus {
+    background-color: #ecebeb;
   }
 }
 
