@@ -6,12 +6,12 @@ background-color: #FFF5F6;
     padding-top: 0;
     }
 }
-.container__advantages {
+/*.container__advantages {
     @media screen and (max-width: 767px) {
     padding-left: 20px;
     padding-right: 20px;
     }
-}
+}*/
 
 .advantages {
     @media screen and (min-width: 768px) {
@@ -20,6 +20,7 @@ background-color: #FFF5F6;
 }
 .advantages__item {
     @media screen and (max-width: 767px) {
+        margin-left: 5px;
         &:not(:last-child) {
             margin-bottom: 32px;
         }
