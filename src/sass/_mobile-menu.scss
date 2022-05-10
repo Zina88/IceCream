@@ -1,18 +1,15 @@
-body {
-  height: 300vh;
-}
-
-a {
-  color: inherit;
-}
-
-.mobile-overlay {
-  background-color: #e17992;
-  height: 100%;
-  width: 250px;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(100%);
   padding-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #e17992;
 
   @media screen and (min-width: 768px) {
     width: 254px;
@@ -22,6 +19,28 @@ a {
   @media screen and (min-width: 1280px) {
     display: none;
   }
+}
+
+.mobile__menu.is-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.mobile__btn.is-active .icon-open {
+  opacity: 0;
+}
+
+.icon-close {
+  opacity: 0;
+}
+
+.mobile__btn.is-active .icon-close {
+  opacity: 1;
 }
 
 .mobile__btn {

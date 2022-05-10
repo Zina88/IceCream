@@ -13,5 +13,8 @@
       <path
         d="m19.902 29.045 11.429-11.429a2.286 2.286 0 0 0 0-3.233L19.902 2.954a2.286 2.286 0 1 0-3.233 3.233l7.527 7.527H2.286a2.286 2.286 0 0 0 0 4.572h21.91l-7.527 7.527c-.446.446-.669 1.031-.669 1.616s.223 1.17.669 1.616c.893.893 2.34.893 3.233 0z" />
     </symbol>
+    <symbol id="burger" viewBox="0 0 46 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
+</symbol>
   </defs>
 </svg>
