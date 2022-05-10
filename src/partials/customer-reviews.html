@@ -2,7 +2,11 @@
     <div class="container">
         <h2 class="visually-hidden ">Customer reviews</h2>
         <div class="customer__one">
-            <img class="customer__avatar" src="images/customers/emelie.png" alt="">
+            <img 
+            class="customer__avatar" 
+            srcset="images/customers/emelie.png 1x, images/customers/emelie@2x.png 2x"
+            src="images/customers/emelie.png" 
+            alt="Emelie">
             <div class="customer__thumb">
               <div class="customer__thumb-gradient">
                     <p class="customer__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
@@ -11,36 +15,43 @@
               </div>
                     
             </div>
-            <p class="customer__name">Emelie, Los Angeles</p>
+            <div class="customer__name-thumb">
+                <p class="customer__name">Emelie, Los Angeles</p>
+            </div>
         </div>
         <div class="customer__two visually-hidden ">
-            <img class="customer__avatar" src="" alt="customer avatar">
+            <img class="customer__avatar" 
+            srcset="images/customers/veronika.png 1x, images/customers/veronika@2x.png 2x"
+            src="images/customers/veronika.png" 
+            alt="Veronika">
             <div class="customer__thumb">
                 <p class="customer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates unde temporibus esse aliquid nobis repellendus nihil libero laudantium qui incidunt?</p>
             </div>
-            <p class="customer__name">Tomas, Seatle</p>
+            <p class="customer__name">Veronika, Seatle</p>
         </div>
         <div class="customer__three visually-hidden ">
-            <img class="customer__avatar" src="" alt="customer avatar">
+            <img 
+            class="customer__avatar" 
+            srcset="images/customers/toma.png 1x, images/customers/toma@2x.png 2x"
+            src="images/customers/toma.png" 
+            alt="Toma">
             <div class="customer__thumb">
                 <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam est
-                    placeat
-                    atque tempore, accusantium similique odit quaerat facilis laudantium ab inventore quod quasi dolore
-                    veritatis at
-                    explicabo illo. Quaerat est nisi dolor ullam eligendi eius, laudantium totam quam consequatur.</p>
+                    placeat atque tempore.</p>
             </div>
-            <p class="customer__name">Veronika, Austin</p>
+            <p class="customer__name">Toma, Austin</p>
         </div>
         
         <ul class="customer__list">
                 <li class="customer__item">
-                  <button class="customer__button"></button>
+                  <button class="customer__button current" type="button">  
+                  </button>
                 </li>
                 <li class="customer__item">
-                    <button class="customer__button"></button>
+                    <button class="customer__button" type="button"></button>
                 </li>
                 <li class="customer__item">
-                    <button class="customer__button"></button>
+                    <button class="customer__button" type="button"></button>
                 </li>
             </ul>
         

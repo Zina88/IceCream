@@ -1,6 +1,7 @@
 .customers {
     background-color: white;
-    margin: 0 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 
 }
 
@@ -9,8 +10,7 @@
     width: 85px;
 
     border-radius: 50%;
-    
-    margin-bottom: 32px;
+     
     margin-left: auto;
     margin-right: auto;
 
@@ -18,12 +18,20 @@
 
 .customer__thumb {
     background-color: #fafafa;
+    margin-top: 32px;
+    margin-bottom: 36px;
+    padding: 30px 50px 17px 50px;
 
-
-    margin-bottom: 16px;
-    padding: 43px 50px 17px 50px;
-
-    text-align: top center;
+    @media screen and(min-width:780px) and (max-width:1199px) {
+           margin: 20px 69px 24px 69px;
+           padding: 20px 0 36px 0;
+    
+        }
+    @media screen and(min-width:1200px) {
+            margin: 16px 118px 36px 118px;
+            padding: 32px 107px 31px 105px;
+    
+        }
 
 }
 
@@ -35,6 +43,11 @@
     background-repeat: no-repeat;
     background-position: 2px 4px;
 
+    @media screen and(min-width:780px) {
+            padding: 20px 6px 0 6px;
+    
+        }
+
 }
 
 .customer__text {
@@ -45,7 +58,12 @@
     text-align: center;
     background-image: repeating-linear-gradient(transparent -5px, transparent 23px, #E1E1E1 25px);
 
-    color: #000000;
+    color: var(--primary-txt-cl);
+    @media screen and(min-width:780px)and (max-width:1199px) {
+            padding-left: 51px;
+            padding-right: 55px;
+    
+        }
 }
 
 .customer__list {
@@ -53,7 +71,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 16px;
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
 }
 
 .customer__item {
@@ -65,28 +83,35 @@
 }
 
 .customer__name {
-    position: relative;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 186%;
-    /* or 26px */
 
     text-align: center;
 
-    color: #000000;
+    color: var(--primary-txt-cl);
 }
 
-.customer__name::before {
+.customer__name-thumb {
+    position: relative;  
+    display: flex;
+        justify-content: center;
+    
+}
+
+.customer__name-thumb::before {
     content: '';
-    display: inline-block;
     height: 4px;
     width: 32px;
     position: absolute;
+    
+    margin-bottom: 16px;
+    bottom: 16px;
 
     background-size: contain;
     background-image: url(../images/customers/dots.png);
-    color: #D41443;
+    
+    color: var(--accent-txt-cl);
 }
 
 .customer__button {
@@ -95,9 +120,12 @@
     border-radius: 50%;
     border: transparent;
     background: #D9D9D9;
-    // &:current {
-    //     border-color: aqua;
-    // }
 
-
+}
+.customer__button.current {
+    background-image: url(../images/customers/home.svg);
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 0;
 }
