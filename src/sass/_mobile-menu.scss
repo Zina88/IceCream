@@ -1,14 +1,17 @@
+.mobile-overlay {
+  background-color: #e17992;
+  display: none;
+}
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  transform: translateX(100%);
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100vw;
+  // height: 100vh;
+  // opacity: 0;
+  // transform: translateX(100%);
   padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   background-color: #e17992;
 
   @media screen and (min-width: 768px) {
@@ -51,6 +54,7 @@
   border: none;
   cursor: pointer;
   z-index: 10;
+  background-color: #ffb8ca;
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -120,8 +124,15 @@
 
   padding-bottom: 11px;
   padding-top: 12px;
+
+  padding-left: 20px;
+  border: 1px solid #e18298;
 }
 
 .mobile-nav__item--current {
   color: var(--accent-txt-cl);
+}
+
+.mobile__icon {
+  fill: var(--accent-txt-cl);
 }
