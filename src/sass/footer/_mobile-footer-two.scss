@@ -62,8 +62,10 @@
 }
 
 .bottom-block__element {
+   @media screen and (max-width: 767px) {
+         margin-bottom: 40px;
+   }
    @media screen and (max-width: 1279px) {
       width: 250px;
-         margin-bottom: 40px;
    }
 }

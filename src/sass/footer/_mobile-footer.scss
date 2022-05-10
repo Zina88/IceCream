@@ -1,87 +1,16 @@
 // список карточек в подвале
 
 .footer {
-   background: linear-gradient(to top, #fff5f6 80%, #ffff 20%);
-}
-.footer__container {
-   margin-bottom: 32px;
-}
-.footer__item {
-   max-width: 450px;
-
-   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-   border-radius: 24px;
-   background: #ffffff;
-   padding: 40px 32px;
-
-   @media screen and (max-width: 767px) {
-      &:not(:last-child) {
-         margin-bottom: 20px;
-      }
-   }
-}
-.footer__text {
-   display: inline;
-
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.8;
-   letter-spacing: 0.04em;
-   color: #ffffff;
-
-   padding: 2px 30px;
-   background: #f0d1a5;
-   border-radius: 4px;
-}
-.footer__text--color {
-   background: #c2e297;
-}
-.footer__content {
-   margin-top: 20px;
-}
-.footer__element {
-   margin-bottom: 24px;
-   &:last-child {
-      margin-top: 24px;
-      margin-bottom: 0;
-   }
-   &--border {
-      padding: 24px 0;
-      border-top: 1px solid #e1e1e1;
-      border-bottom: 1px solid #e1e1e1;
-   }
-}
-.footer__name {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.8;
-   letter-spacing: 0.04em;
-
-   margin-bottom: 8px;
-}
-.footer__document {
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.5;
-   color: #907e82;
-}
-.footer__time {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.8;
-   color: #ffa5ba;
-}
-.footer__link {
-   display: block;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.5;
-   color: #907e82;
+   // background: linear-gradient(to top, #fff5f6 80%, #ffff 20%);
+   background-color: #fff5f6;
 }
 
-.box{
+.box {
    border-top: 1px solid #e1e1e1;
    margin-top: 40px;
+   @media screen and (min-width: 1280px) {
+      margin-top: 60px;
+   }
 }
 .box__text {
    padding: 16px 20px 20px;

@@ -3,7 +3,12 @@
    justify-content: flex-end;
    margin-bottom: 40px;
 }
-.netvork-list__link{
+.netvork-list__item {
+   &:not(:last-child) {
+      margin-right: 25px;
+   }
+}
+.netvork-list__link {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -11,25 +16,24 @@
    width: 34px;
    height: 34px;
    border-radius: 50%;
-   margin-right: 10px;
    border: none;
    border-radius: 50%;
    color: #ffffff;
    fill: #ffffff;
-   
+
    transition-property: background-color;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   
+
    &:hover,
    &:focus {
-      background-color: #D41443;;
+      background-color: #d41443;
       fill: #ffffff;
    }
 
-   background-color: #FEA5BB;
+   background-color: #fea5bb;
 }
-.netvork-list__icon{
+.netvork-list__icon {
    width: 20px;
    height: 20px;
 }
@@ -37,9 +41,9 @@
 .contact {
    text-align: right;
    font-weight: 700;
-font-size: 13px;
-line-height: 1.8;
+   font-size: 13px;
+   line-height: 1.8;
 }
 .contact__link {
-   color: #D41443;
+   color: #d41443;
 }
