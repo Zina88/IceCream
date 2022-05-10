@@ -1,9 +1,12 @@
+.main-hero-bg {
+   background-color: #FFB8CA; 
+}
+
 .section-hero {
     position: relative;
     margin-right: auto;
     margin-left: auto;
     height: 502px;
-    background-color: #FFB8CA;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
