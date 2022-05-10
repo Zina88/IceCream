@@ -2,6 +2,60 @@
 <div class="main-hero-bg">
     <section class="section section-hero">
     <div class="container hero__container">
+
+        <header class="header">
+            <div class="container header__container">
+                <a href="/index.html" class="header__link">
+                    <img class="header__icon" src="/images/icon-logo.png" alt="logo" width="50px">
+                    <span class="header__logo">icecream</span>
+                </a>
+        
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--current"><a class="mobile-nav__link" href="/index.html">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#process">How it's made?</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#products">Our products</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        
+                <button class="mobile__btn" data-menu-button type="button" aria-expanded="false" aria-controls="mobile__menu">
+                    <svg class="mobile__icon" height='14px' width='22px'>
+                        <use class="icon-open" href="/images/icons.svg#menu_24px"> </use>
+                        <use class="icon-close" href="/images/icons.svg#close_24px"> </use>
+                    </svg>
+                </button>
+        
+        
+                <button class="main__btn-header" type="button">Buy now
+                    <svg class="arrow_right__icon" height='20px' width='15px'>
+                        <use class="arrow_right" href="/images/icons.svg#arrowright"> </use>
+                    </svg>
+                </button>
+        
+                <!-- Мобільне меню -->
+                <div class="mobile__menu" data-menu id="mobile__menu">
+                    <button class="main__btn-mobile" type="button">Buy now
+                        <svg class="arrow_right__icon-mobile" height='25px' width='20px'>
+                            <use class="arrow_right" href="/images/icons.svg#arrowright"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item mobile-nav__item--current"><a class="mobile-nav__link"
+                                    href="#home">Home</a>
+                            </li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#about">About us</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#process">How it's made?</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#products">Our products</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
         <div class="hero-upper-wrapper">
             <div class="hero-title-wrapper">
                 <h1 class="hero__title">ice cream made with 
