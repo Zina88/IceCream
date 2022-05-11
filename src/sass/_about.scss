@@ -13,6 +13,10 @@
 
 .section__bg {
   background-color: #fff5f6;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
 }
 
 .section__bg-img {
