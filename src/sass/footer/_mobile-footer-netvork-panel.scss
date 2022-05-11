@@ -43,6 +43,13 @@
    font-weight: 700;
    font-size: 12px;
    line-height: 1.8;
+
+   @media screen and (min-width: 768px) {
+      font-size: 14px;
+   }
+   @media screen and (min-width: 1280px) {
+      font-size: 16px;
+   }
 }
 .contact__link {
    color: #d41443;
