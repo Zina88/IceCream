@@ -1,0 +1,135 @@
+.mobile__menu {
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(100%);
+  background-color: #e17992;
+  @media screen and (min-width: 768px) {
+    padding-top: 58px;
+    width: 254px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile__menu.is-open {
+  opacity: 1;
+  transform: translateX(0);
+  display: block;
+}
+
+.mobile__btn {
+  @media screen and (max-width: 479px) {
+    margin-left: 50px;
+  }
+
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+  padding: 0;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile__icon {
+  fill: var(--accent-txt-cl);
+}
+
+.icon-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.mobile__btn.is-active .icon-open {
+  opacity: 0;
+}
+
+.icon-close {
+  opacity: 0;
+  fill: #fff;
+}
+
+.mobile__btn.is-active .icon-close {
+  opacity: 1;
+}
+
+.mobile__btn.is-active .mobile__icon {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -12px;
+    right: 32px;
+  }
+}
+
+.mobile__btn.is-active ~ .main__btn-header {
+  display: none;
+}
+
+.main__btn-mobile {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  padding-right: 42px;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--accent-txt-cl);
+
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 52px;
+    padding-right: 35px;
+  }
+}
+
+.main__btn-mobile:hover {
+  background-color: #ecebeb;
+}
+
+.mobile-nav__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+
+  padding-bottom: 11px;
+  padding-top: 12px;
+
+  padding-left: 20px;
+  border: 1px solid #e18298;
+}
+
+.mobile-nav__item--current {
+  color: var(--accent-txt-cl);
+}
+
+.arrow_right__icon-mobile {
+  fill: var(--accent-txt-cl);
+  margin-left: 20px;
+  @media screen and (min-width: 768px) {
+    margin-left: 14px;
+  }
+}
