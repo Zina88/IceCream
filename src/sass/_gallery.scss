@@ -1,5 +1,10 @@
 .section-gallery{
     background-image: linear-gradient(to bottom, #FFF5F6 45%, #fff 45%, #fff);
+
+    @media screen and(min-width: 768px) and(max-width: 1279px){
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
 }
 
 .grid {
