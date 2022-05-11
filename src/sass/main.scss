@@ -6,19 +6,21 @@
 // Стили для файла с примером HTML-фрагмента
 @import "./variables";
 @import "./base";
-@import "./hero/index";
-@import './products';
-@import "./about";
+
+// подвал
+
+
 @import "./advantages";
+@import "./hero/index";
+@import "./about";
 @import "./gallery";
 @import "./customer-reviews";
-@import './contacts';
-
 @import "./modal";
-
+@import './variables';
+@import './base';
 @import './advantages';
 @import './hero/index';
-
+@import './products';
 @import './about';
 @import './gallery';
 @import './customer-reviews';
