@@ -1,3 +1,8 @@
+.section-products  {
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+    }
+} 
 .section-products__label {
     @media screen and (min-width:768px) {
         margin-bottom: 18px;
@@ -46,7 +51,7 @@
     }
 
     @media screen and (min-width:768px) {
-        padding: 118px 25px 40px 25px;
+        padding: 118px 32px 40px 32px;
 
         &:nth-child(-n+2) {
             margin-bottom: 0;
@@ -92,6 +97,7 @@
         height: 280px;
         background-repeat: no-repeat;
         background-position: center;
+        background-size: contain;
 
         @media screen and (min-width:768px) {
             height: 224px;
@@ -114,6 +120,7 @@
         background-image: url("../images/products/group-points.png");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 26px 6px;
     }
 }
 
