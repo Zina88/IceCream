@@ -92,6 +92,7 @@
         height: 280px;
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100% 280px;
 
         @media screen and (min-width:768px) {
             height: 224px;
@@ -114,6 +115,7 @@
         background-image: url("../images/products/group-points.png");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 26px 6px;
     }
 }
 
