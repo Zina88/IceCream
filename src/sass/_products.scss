@@ -67,14 +67,14 @@
 }
 
 .section-products__name {
-    margin-bottom: 32px;
-    text-align: center;
+    margin-bottom: 32px;   
 
+    font-family: var(--secondary-font);
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.04em;
+    text-align: center;    
     text-transform: uppercase;
     color: #FFFFFF;
 
