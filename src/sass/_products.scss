@@ -1,6 +1,11 @@
 .section-products  {
+    padding-top: 80px;
     @media screen and (min-width: 768px) {
+        padding-top: 40px;
         padding-bottom: 60px;
+    }
+    @media screen and (min-width:1280px) {
+        padding-top: 60px;
     }
 } 
 .section-products__label {
