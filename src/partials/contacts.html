@@ -61,16 +61,26 @@
       </li>
     </ul>
     <ul class="contacts__buttons">
-      <li>
-        <button class="contacts__button contacts__button--red" type="button" data-modal-open>
+      <li class="contacts__button-item" class="contacts__button-item">
+        <button
+          class="contacts__button contacts__button--red js-open-modal"
+          type="button"
+          aria-label="our locations"
+          data-modal="1"
+        >
           Our Locations
           <svg class="button__icon" width="8" height="10">
             <use href="/images/icons.svg#icon-bracket-white"></use>
           </svg>
         </button>
       </li>
-      <li>
-        <button class="contacts__button contacts__button--white" type="button" data-modal-open>
+      <li class="contacts__button-item">
+        <button
+          class="contacts__button contacts__button--white js-open-modal"
+          type="button"
+          aria-label="franchise"
+          data-modal="1"
+        >
           Franchise
           <svg class="button__icon" width="8" height="10">
             <use href="/images/icons.svg#icon-bracket-red"></use>
