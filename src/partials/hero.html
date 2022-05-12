@@ -11,7 +11,7 @@
         
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item nav__item--current"><a class="mobile-nav__link" href="/index.html">Home</a></li>
+                        <li class="nav__item nav__item--current"><a class="nav__link" href="/index.html">Home</a></li>
                         <li class="nav__item"><a class="nav__link" href="#products">About us</a></li>
                         <li class="nav__item"><a class="nav__link" href="#about">How it's made?</a></li>
                         <li class="nav__item"><a class="nav__link" href="#process">Our products</a></li>
@@ -27,7 +27,7 @@
                 </button>
         
         
-                <button class="main__btn-header" type="button">Buy now
+                <button class="main__btn-header js-open-modal" type="button" aria-label="more information" data-modal="2">Buy now
                     <svg class="arrow_right__icon" height='20px' width='15px'>
                         <use class="arrow_right" href="/images/icons.svg#arrowright"> </use>
                     </svg>
@@ -35,14 +35,14 @@
         
                 <!-- Мобільне меню -->
                 <div class="mobile__menu" data-menu id="mobile__menu">
-                    <button class="main__btn-mobile" type="button">Buy now
+                    <button class="main__btn-mobile js-open-modal" type="button" aria-label="more information" data-modal="2">Buy now
                         <svg class="arrow_right__icon-mobile" height='25px' width='20px'>
                             <use class="arrow_right" href="/images/icons.svg#arrowright"></use>
                         </svg>
                     </button>
                     <nav class="mobile-nav">
                         <ul class="mobile-nav__list">
-                            <li class="mobile-nav__item mobile-nav__item--current"><a class="mobile-nav__link"
+                            <li class="mobile-nav__item"><a class="mobile-nav__link"
                                     href="#home">Home</a>
                             </li>
                             <li class="mobile-nav__item"><a class="mobile-nav__link" href="#products">About us</a></li>
