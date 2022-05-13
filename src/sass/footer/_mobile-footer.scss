@@ -14,6 +14,9 @@
 }
 .box__text {
    padding: 16px 20px 20px;
+   @media screen and (min-width: 768px) {
+         padding: 8px;
+      }
 
    font-weight: 700;
    font-size: 14px;
